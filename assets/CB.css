@@ -1,0 +1,150 @@
+html {
+    font-size: 10px;
+}
+body {
+    @include font-size(13);
+    font-family: $defaultFontStack;
+    color: $offBlack;
+    font-weight: 400;
+    line-height: 1.65;
+    text-align: center;
+    background-color: #e9e8e8;
+}
+
+.bottom {
+    background-color: #f0f0f0;
+    position: fixed;
+    bottom: 2px;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+    padding: 10px 10px;
+    opacity: 0.8;
+    color: gray;
+    font-size: 10px;
+    width: 100%;
+}
+
+.intro {
+    margin: 100px auto;
+}
+
+.contact {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 1.67;
+    text-align: center;
+    color: #1a1b20;
+}
+
+.contact a {
+    color: #1a1b20;
+    text-decoration: none;   
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+    line-height: 1.2;
+    color: $offBlack;
+}
+h1, h2 {
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+h1, h2, h3 {
+    position: relative;
+
+    &:after {
+        content: ' ';
+        display: block;
+        width: 25px;
+        height: 2px;
+        margin: 20px auto 15px;
+        background: $offBlack;
+    }
+}
+h3, h4 {
+    font-weight: 400;
+    font-size: 33px;
+}
+h3 {
+
+}
+h4 {
+    margin-bottom: 30px;
+}
+h5 {
+}
+h6 {
+}
+a {
+    color: $offBlack;
+    text-decoration: none;
+}
+p {
+    margin-bottom: 1.5em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+blockquote {
+}
+ul {
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+}
+ul, ol {
+    margin: 1em 0;
+    padding-left: 1.3em;
+
+    li {
+        margin-bottom: 0.5em;
+    }
+}
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+textarea,
+select,
+input[type="submit"] {
+}
+@media (--tablet) {
+    body {
+        @include font-size(15);
+    }
+    h1, h2 {
+        @include font-size(33);
+    }
+    h1, h2, h3 {
+        &:after {
+            margin-top: 18px;
+        }
+    }
+    h3 {
+        @include font-size(25);
+    }
+    h4 {
+        @include font-size(17);
+    }
+}
+@media (--desktop) {
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
