@@ -22,10 +22,25 @@ body {
     color: 585868;
     font-size: 10px;
     width: 100%;
+    z-index: -10;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .bottom img {
     width: 100%;
     max-width: 1024px;
+    z-index: -10;
+}
+
+.details {
+    background-color: rgba(233, 232, 232, 0.82);
+    margin: auto;
+    padding-bottom: 10px;
+    border-radius: 13px;
 }
 
 .back {
@@ -34,10 +49,11 @@ body {
     height: 240px;
     width: 100%;
     bottom: 0px;
+    z-index: -11;
 }
 
 .intro {
-    margin: 100px auto;
+    margin: 60px auto;
 }
 
 .contact {
@@ -63,6 +79,8 @@ body {
 .social-links:hover {
     opacity: 1;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
@@ -110,63 +128,10 @@ p {
         margin-bottom: 0;
     }
 }
-blockquote {
-}
-ul {
-    list-style: disc;
-}
-ol {
-    list-style: decimal;
-}
-ul, ol {
-    margin: 1em 0;
-    padding-left: 1.3em;
 
-    li {
-        margin-bottom: 0.5em;
-    }
-}
-strong {
-    font-weight: bold;
-}
-em {
-    font-style: italic;
-}
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="number"],
-input[type="password"],
-input[type="url"],
-input[type="tel"],
-input[type="search"],
-textarea,
-select,
-input[type="submit"] {
-}
-@media (--tablet) {
-    body {
-        @include font-size(15);
-    }
-    h1, h2 {
-        @include font-size(33);
-    }
-    h1, h2, h3 {
-        &:after {
-            margin-top: 18px;
-        }
-    }
-    h3 {
-        @include font-size(25);
-    }
-    h4 {
-        @include font-size(17);
-    }
-}
-@media (--desktop) {
-    a {
-        &:hover {
-            text-decoration: underline;
-        }
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 80px;
+        letter-spacing: 2px;
     }
 }
