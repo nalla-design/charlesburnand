@@ -3,7 +3,7 @@ html {
 }
 body {
     @include font-size(13);
-    font-family: $defaultFontStack;
+    font-family: "Helvetica Neue", Helvetica, 'Roboto', Arial, sans-serif;
     color: $offBlack;
     font-weight: 400;
     line-height: 1.65;
@@ -30,7 +30,6 @@ body {
 }
 
 .contact {
-    font-family: Roboto;
     font-size: 15px;
     line-height: 1.67;
     text-align: center;
@@ -42,41 +41,10 @@ body {
     text-decoration: none;   
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 200;
-    line-height: 1.2;
-    color: $offBlack;
+h2 {
+    font-family: 'Roboto', Arial, sans-serif;    
 }
-h1, h2 {
-    font-size: 33px;
-    letter-spacing: 2px;
-}
-h1, h2, h3 {
-    position: relative;
 
-    &:after {
-        content: ' ';
-        display: block;
-        width: 25px;
-        height: 2px;
-        margin: 20px auto 15px;
-        background: $offBlack;
-    }
-}
-h3, h4 {
-    font-weight: 400;
-    font-size: 33px;
-}
-h3 {
-
-}
-h4 {
-    margin-bottom: 30px;
-}
-h5 {
-}
-h6 {
-}
 a {
     color: $offBlack;
     text-decoration: none;
