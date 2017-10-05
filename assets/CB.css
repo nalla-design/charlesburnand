@@ -2,9 +2,7 @@ html {
     font-size: 10px;
 }
 body {
-    @include font-size(13);
     font-family: "Helvetica Neue", Helvetica, 'Roboto', Arial, sans-serif;
-    color: $offBlack;
     font-weight: 400;
     line-height: 1.65;
     text-align: center;
@@ -40,7 +38,6 @@ body {
     background-color: rgba(233, 232, 232, 0.82);
     margin: auto;
     padding-bottom: 10px;
-    border-radius: 13px;
 }
 
 .back {
@@ -118,7 +115,6 @@ h5 {
 h6 {
 }
 a {
-    color: $offBlack;
     text-decoration: none;
 }
 p {
@@ -126,12 +122,5 @@ p {
 
     &:last-child {
         margin-bottom: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 80px;
-        letter-spacing: 2px;
     }
 }
