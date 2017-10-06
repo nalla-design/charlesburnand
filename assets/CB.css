@@ -135,11 +135,11 @@ p {
         width: 80%;
     }
     .intro {
-        margin: 150px auto;
+        margin: 100px auto;
     }
     .bottom {
         position: fixed;
-        bottom: 10%;
+        bottom: 6%;
         margin: 0 auto;
         overflow: auto;
         text-align: center;
@@ -152,7 +152,7 @@ p {
     .back {
         background-color: #f0f0f0;
         position: absolute;
-        padding-bottom: 15%;
+        padding-bottom: 8%;
         height: 240px;
         width: 100%;
         bottom: 0px;
