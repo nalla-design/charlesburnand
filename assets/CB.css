@@ -6,21 +6,8 @@ body {
     font-weight: 400;
     line-height: 1.65;
     text-align: center;
-    background-color: #e9e8e8;
+    background-color: #f0f0f0;
     margin: 0px
-}
-
-.bottom {
-    position: fixed;
-    bottom: 2px;
-    margin: 0 auto;
-    overflow: auto;
-    text-align: center;
-    opacity: 0.8;
-    color: 585868;
-    font-size: 10px;
-    width: 100%;
-    z-index: -10;
 }
 
 .text {
@@ -28,10 +15,24 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.bottom {
+    bottom: 2px;
+    margin: 0 auto;
+    overflow: auto;
+    text-align: center;
+    opacity: 0.8;
+    color: #585868;
+    font-size: 10px;
+    width: 100%;
+    z-index: 10;
+}
+
 .bottom img {
     width: 100%;
     max-width: 1024px;
-    z-index: -10;
+    z-index: 10;
+    margin-top: 10%;
 }
 
 .details {
@@ -40,13 +41,17 @@ body {
     padding-bottom: 10px;
 }
 
+.backdrop {
+    background-color: #e9e8e8;
+    padding: 60px 0 0px;
+}
+
 .back {
-    background-color: #f0f0f0;
-    position: absolute;
-    height: 240px;
     width: 100%;
-    bottom: 0px;
     z-index: -11;
+    height: 20%;
+    background-color: #f0f0f0;
+    margin-top: -140px;
 }
 
 .intro {
@@ -108,16 +113,6 @@ a {
 }
 p {
     margin-bottom: 1.5em;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 80px;
-    }
 }
 
 @media only screen 
@@ -138,7 +133,6 @@ p {
         margin: 100px auto;
     }
     .bottom {
-        position: fixed;
         bottom: 6%;
         margin: 0 auto;
         overflow: auto;
@@ -150,13 +144,11 @@ p {
         z-index: -10;
     }
     .back {
-        background-color: #f0f0f0;
-        position: absolute;
-        padding-bottom: 8%;
-        height: 240px;
         width: 100%;
-        bottom: 0px;
         z-index: -11;
+        height: 20%;
+        background-color: #f0f0f0;
+        margin-top: -140px;
     }
     .social-links {
         width: 60px;
