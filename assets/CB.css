@@ -25,7 +25,13 @@ body {
     color: #585868;
     font-size: 10px;
     width: 100%;
+    max-width: 1024px;
+    height: 26%;
     z-index: 10;
+    background-image: url('CB.png');
+    background-size: 100%;
+
+    background-repeat: no-repeat;
 }
 
 .bottom img {
@@ -142,6 +148,7 @@ p {
         font-size: 10px;
         width: 100%;
         z-index: -10;
+        height: 19%;
     }
     .back {
         width: 100%;
